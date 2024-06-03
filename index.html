@@ -32,6 +32,7 @@
         <section class="modal-content">
           <section class="modal-header">
             <h3 class="modal-title">Add Task</h3>
+            <button type="button" class="close border border-white bg-white" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
           </section>
 
           <!--Content of the Modal and form-->
@@ -39,12 +40,13 @@
             <form class="row">
               <section class="col form-group pb-2">
                 <label for="taskTitle">Task title</label>
-                <input type="text" id="taskTitle" class="form-control" placeholder="Task">
+                <input type="text" id="taskTitle" class="form-control" placeholder="Task" aria-label="Close">
               </section>
 
               <section class="col">
                 <label for="dueDate">Task Due Date</label>
-                <input type="text" id="dueDate" class="datepicker form-control" placeholder="Date" data-date-format="mm/dd/yyyy">
+                <input type="text" id="dueDate" class="datepicker form-control" placeholder="Date"
+                  data-date-format="mm/dd/yyyy">
               </section>
 
               <section class="form-group pt-2">
@@ -55,7 +57,7 @@
               <section class="form-group pt-2">
                 <button class="btn btn-success" type="submit">Add Task</button>
               </section>
-             
+
             </form>
           </section>
 
@@ -70,8 +72,9 @@
           <div class="card-header bg-white">
             <h2 class="card-title mb-1">To Do</h2>
           </div>
-          <div class="card-body bg-light">
-            <div id="todo-cards"></div>
+          <div class="card-body bg-light d-flex justify-content-center">
+            <div id="todo-cards">
+            </div>
           </div>
         </div>
       </div>
@@ -81,8 +84,9 @@
           <div class="card-header bg-white">
             <h2 class="card-title mb-1">In Progress</h2>
           </div>
-          <div class="card-body bg-light">
-            <div id="in-progress-cards"></div>
+          <div class="card-body bg-light d-flex justify-content-center">
+            <div id="in-progress-cards">
+            </div>
           </div>
         </div>
       </div>
@@ -92,8 +96,9 @@
           <div class="card-header bg-white">
             <h2 class="card-title mb-1">Done</h2>
           </div>
-          <div class="card-body bg-light">
-            <div id="done-cards"></div>
+          <div class="card-body bg-light d-flex justify-content-center">
+            <div id="done-cards">
+            </div>
           </div>
         </div>
       </div>
