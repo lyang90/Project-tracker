@@ -36,7 +36,7 @@
           </section>
 
           <!--Content of the Modal and form-->
-          <section class="modal-body">
+          <section class="modal-body" >
             <form class="row">
               <section class="col form-group pb-2">
                 <label for="taskTitle">Task title</label>
@@ -55,7 +55,7 @@
               </section>
 
               <section class="form-group pt-2">
-                <button class="btn btn-success" type="submit">Add Task</button>
+                <button class="btn btn-success" data-bs-dismiss="modal" id="submit" type="submit">Add Task</button>
               </section>
 
             </form>
@@ -66,14 +66,14 @@
       </section>
     </section>
 
-    <div class="row swim-lanes text-center justify-content-between">
+    <div class="row swim-lanes text-center justify-content-between" id="drag-area">
       <div class="col-12 col-lg-4 d-flex">
         <div id="to-do" class="card border-light mb-3 lane flex-grow-1">
           <div class="card-header bg-white">
-            <h2 class="card-title mb-1">To Do</h2>
+            <h2 class="card-title mb-1 ">To Do</h2>
           </div>
           <div class="card-body bg-light d-flex justify-content-center">
-            <div id="todo-cards">
+            <div class="w-100 droppable" id="todo-cards">
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@
             <h2 class="card-title mb-1">In Progress</h2>
           </div>
           <div class="card-body bg-light d-flex justify-content-center">
-            <div id="in-progress-cards">
+            <div class="w-100 droppable" id="in-progress-cards">
             </div>
           </div>
         </div>
@@ -97,7 +97,7 @@
             <h2 class="card-title mb-1">Done</h2>
           </div>
           <div class="card-body bg-light d-flex justify-content-center">
-            <div id="done-cards">
+            <div class="w-100 droppable" id="done-cards">
             </div>
           </div>
         </div>
